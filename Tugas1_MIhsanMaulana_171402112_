@@ -1,0 +1,14 @@
+class Fibonacci:
+    def hitung_fibonacci(self,x):
+        if (x==0):
+            return 0
+        elif (x<=2):
+            return 1
+        else:
+            fib = (self.hitung_fibonacci(x-1)+self.hitung_fibonacci(x-2))
+            return fib
+
+p1 = Fibonacci()
+nilai = int (input("Masukan nilai :"))
+for i in range (0,nilai):
+    print(p1.hitung_fibonacci(i))
